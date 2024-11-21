@@ -1,0 +1,86 @@
+WARNING: There was an error checking the latest version of pip.
+(jai_hanuman) welcome@jaisairams-Laptop custom_agents % pip uninstall langchain-core==0.3.0
+Found existing installation: langchain-core 0.3.0
+Uninstalling langchain-core-0.3.0:
+  Would remove:
+    /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_core-0.3.0.dist-info/*
+    /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_core/*
+Proceed (Y/n)? Y
+  Successfully uninstalled langchain-core-0.3.0
+(jai_hanuman) welcome@jaisairams-Laptop custom_agents % pip install langchain-core==0.2.43 
+Collecting langchain-core==0.2.43
+  Obtaining dependency information for langchain-core==0.2.43 from https://files.pythonhosted.org/packages/70/9b/b26405992d807a592ab3e7792f0eb2c2f71fe69111c972caf7786ba99199/langchain_core-0.2.43-py3-none-any.whl.metadata
+  Using cached langchain_core-0.2.43-py3-none-any.whl.metadata (6.2 kB)
+Requirement already satisfied: PyYAML>=5.3 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (6.0.1)
+Requirement already satisfied: jsonpatch<2.0,>=1.33 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (1.33)
+Requirement already satisfied: langsmith<0.2.0,>=0.1.112 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (0.1.129)
+Requirement already satisfied: packaging<25,>=23.2 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (23.2)
+Requirement already satisfied: pydantic<3,>=1 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (2.9.2)
+Requirement already satisfied: tenacity!=8.4.0,<9.0.0,>=8.1.0 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (8.3.0)
+Requirement already satisfied: typing-extensions>=4.7 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langchain-core==0.2.43) (4.12.2)
+Requirement already satisfied: jsonpointer>=1.9 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from jsonpatch<2.0,>=1.33->langchain-core==0.2.43) (2.4)
+Requirement already satisfied: httpx<1,>=0.23.0 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (0.27.0)
+Requirement already satisfied: orjson<4.0.0,>=3.9.14 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (3.10.0)
+Requirement already satisfied: requests<3,>=2 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (2.32.3)
+Requirement already satisfied: annotated-types>=0.6.0 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from pydantic<3,>=1->langchain-core==0.2.43) (0.6.0)
+Requirement already satisfied: pydantic-core==2.23.4 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from pydantic<3,>=1->langchain-core==0.2.43) (2.23.4)
+Requirement already satisfied: anyio in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (4.4.0)
+Requirement already satisfied: certifi in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (2024.2.2)
+Requirement already satisfied: httpcore==1.* in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (1.0.2)
+Requirement already satisfied: idna in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (3.7)
+Requirement already satisfied: sniffio in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (1.3.0)
+Requirement already satisfied: h11<0.15,>=0.13 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (0.14.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from requests<3,>=2->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (3.3.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from requests<3,>=2->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (2.1.0)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from anyio->httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (1.2.0)
+Using cached langchain_core-0.2.43-py3-none-any.whl (397 kB)
+Installing collected packages: langchain-core
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+langflow-base 0.0.96 requires opentelemetry-api<2.0.0,>=1.25.0, which is not installed.
+langflow-base 0.0.96 requires opentelemetry-sdk<2.0.0,>=1.25.0, which is not installed.
+langchain-cohere 0.3.1 requires langchain-core<0.4,>=0.3.0, but you have langchain-core 0.2.43 which is incompatible.
+langchain-elasticsearch 0.3.0 requires langchain-core<0.4.0,>=0.3.0, but you have langchain-core 0.2.43 which is incompatible.
+langchain-experimental 0.3.2 requires langchain-community<0.4.0,>=0.3.0, but you have langchain-community 0.2.19 which is incompatible.
+langchain-experimental 0.3.2 requires langchain-core<0.4.0,>=0.3.6, but you have langchain-core 0.2.43 which is incompatible.
+langchain-openai 0.2.3 requires langchain-core<0.4.0,>=0.3.12, but you have langchain-core 0.2.43 which is incompatible.
+langflow 1.0.18 requires langchain-cohere<0.2.0,>=0.1.5, but you have langchain-cohere 0.3.1 which is incompatible.
+langflow 1.0.18 requires langchain-openai==0.1.22, but you have langchain-openai 0.2.3 which is incompatible.
+langflow 1.0.18 requires lark<2.0.0,>=1.2.2, but you have lark 1.1.9 which is incompatible.
+langflow 1.0.18 requires pydantic-settings==2.4.0, but you have pydantic-settings 2.6.0 which is incompatible.
+langflow-base 0.0.96 requires langchain-experimental<0.0.62,>=0.0.61, but you have langchain-experimental 0.3.2 which is incompatible.
+langflow-base 0.0.96 requires pypdf<5.0.0,>=4.2.0, but you have pypdf 5.0.1 which is incompatible.
+Successfully installed langchain-core-0.2.43
+WARNING: There was an error checking the latest version of pip.
+(jai_hanuman) welcome@jaisairams-Laptop custom_agents % pip list | grep langchain
+
+composio_langchain                        0.5.9
+langchain                                 0.2.17
+langchain-anthropic                       0.1.23
+langchain-astradb                         0.3.5
+langchain-aws                             0.1.18
+langchain-chroma                          0.1.2
+langchain-cohere                          0.3.1
+langchain-community                       0.2.19
+langchain-core                            0.2.43
+langchain-elasticsearch                   0.3.0
+langchain-experimental                    0.3.2
+langchain-google-calendar-tools           0.0.1
+langchain-google-community                1.0.7
+langchain-google-genai                    1.0.8
+langchain-google-vertexai                 1.0.10
+langchain-groq                            0.1.9
+langchain-milvus                          0.1.4
+langchain-mistralai                       0.1.12
+langchain-mongodb                         0.1.9
+langchain-nvidia-ai-endpoints             0.1.6
+langchain-ollama                          0.1.1
+langchain-openai                          0.2.3
+langchain-pinecone                        0.1.3
+langchain-postgres                        0.0.9
+langchain-text-splitters                  0.2.4
+langchain-unstructured                    0.1.2
+langchainhub                              0.1.20
+langchainplus-sdk                         0.0.20
+openinference-instrumentation-langchain   0.1.27
+WARNING: There was an error checking the latest version of pip.
+(jai_hanuman) welcome@jaisairams-Laptop custom_agents % 
