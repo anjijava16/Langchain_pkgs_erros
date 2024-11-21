@@ -1,3 +1,25 @@
+/Users/welcome/anaconda3/envs/jai_hanuman/bin/python /Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/lang_server_app/DeepDive_GenAI/llm_app/main.py 
+Traceback (most recent call last):
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/lang_server_app/DeepDive_GenAI/llm_app/main.py", line 5, in <module>
+    from DeepDive_GenAI.llm_app.chat_router import chat_router
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/lang_server_app/DeepDive_GenAI/llm_app/chat_router.py", line 10, in <module>
+    from DeepDive_GenAI.llm_app.model import init
+  File "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/lang_server_app/DeepDive_GenAI/llm_app/model.py", line 4, in <module>
+    from langchain_openai import AzureChatOpenAI
+  File "/Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_openai/__init__.py", line 1, in <module>
+    from langchain_openai.chat_models import AzureChatOpenAI, ChatOpenAI
+  File "/Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_openai/chat_models/__init__.py", line 1, in <module>
+    from langchain_openai.chat_models.azure import AzureChatOpenAI
+  File "/Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_openai/chat_models/azure.py", line 18, in <module>
+    from langchain_openai.chat_models.base import BaseChatOpenAI
+  File "/Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_openai/chat_models/base.py", line 66, in <module>
+    from langchain_core.messages.ai import (
+ImportError: cannot import name 'InputTokenDetails' from 'langchain_core.messages.ai' (/Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages/langchain_core/messages/ai.py)
+
+Process finished with exit code 1
+
+
+
 WARNING: There was an error checking the latest version of pip.
 (jai_hanuman) welcome@jaisairams-Laptop custom_agents % pip uninstall langchain-core==0.3.0
 Found existing installation: langchain-core 0.3.0
@@ -34,6 +56,7 @@ Requirement already satisfied: charset-normalizer<4,>=2 in /Users/welcome/anacon
 Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from requests<3,>=2->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (2.1.0)
 Requirement already satisfied: exceptiongroup>=1.0.2 in /Users/welcome/anaconda3/envs/jai_hanuman/lib/python3.10/site-packages (from anyio->httpx<1,>=0.23.0->langsmith<0.2.0,>=0.1.112->langchain-core==0.2.43) (1.2.0)
 Using cached langchain_core-0.2.43-py3-none-any.whl (397 kB)
+
 Installing collected packages: langchain-core
 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
 langflow-base 0.0.96 requires opentelemetry-api<2.0.0,>=1.25.0, which is not installed.
